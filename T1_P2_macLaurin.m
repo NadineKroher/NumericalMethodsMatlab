@@ -9,7 +9,7 @@ err = zeros(length(x),1);
 disp('+++ ORIGINAL RECURRENCE +++')
 for i = 1 : length(x)
     N(i) = getDegreeMacLaurin(x(i)); % compute the degree necessary to approximate e^(-x) with an absolute error smaller than 10^(-5)
-    app(i) = maclaurin(x(i),N(i)); % approximate e^(-x) using the MacLaurin polinom
+    app(i) = maclaurin(x(i),N(i)); % approximate e^(-x) using the MacLaurin polynomial
     err(i) = abs(app(i)-exp(-x(i)))/exp(-x(i)); % compute the absolute error
     disp(['rel. error for x=' num2str(x(i)) ':  ' num2str(err(i))])
 end

@@ -14,7 +14,7 @@ T6: Ordinary differential equations
 The implemented algorithms include:
 
 - Archimedes' method to determine pi
-- McLaurin polynom to approximate e^(-x)
+- McLaurin polynomial to approximate e^(-x)
 - Centred difference (first and second order), gradient and Hessian
 - Newton's method (optimization)
 - Gauss-Newton method for non-linear least squares
