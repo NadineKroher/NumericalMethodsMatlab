@@ -4,6 +4,7 @@ This is a collection of Matlab code of several numerical algorithms, their appli
 
 The application examples are divided into the following topics:
 
+T1: Numerical instability
 T2: Linear equation systems
 T3: Interpolation
 T4: Numerical integration 
@@ -12,7 +13,9 @@ T6: Ordinary differential equations
 
 The implemented algorithms include:
 
-- Centered difference (first and second order), gradient and Hessian
+- Archimedes' method to determine pi
+- McLaurin polynom to approximate e^(-x)
+- Centred difference (first and second order), gradient and Hessian
 - Newton's method (optimization)
 - Gauss-Newton method for non-linear least squares
 - Euler's method, Euler's mid-point method, and the Runge-Kutta method for solving ordinary differential equations

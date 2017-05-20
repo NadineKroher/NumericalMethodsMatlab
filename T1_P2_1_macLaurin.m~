@@ -1,0 +1,11 @@
+x = [0.001, 0.01, 20, 25];
+
+
+N = zeros(length(x),1);
+for i = 1 : length(x)
+    N(i) = getDegreeMacLaurin(x(i)); % compute the degree necessary to approximate e^(-x) with an absolute error smaller than 10^(-5)
+    app(i) = maclaurin(x(i),N(i));
+    err(i) = abs(app(i)-exp(-x(i)))/exp(-x(i));
+    disp(['rel. error for x=' num2str(x(i)) ':  ' num2str(err(i))])
+end
+
