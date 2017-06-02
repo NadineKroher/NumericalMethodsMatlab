@@ -14,6 +14,5 @@ for i = 2 : length(T)
     Y_k_2 = Y(i-1,:)+f(T(i-1),Y(i-1,:))'*h/2;
     Y(i,:) = Y(i-1,:)+f(T(i-1)+h/2,Y_k_2)'*h;
 end
-
 end
 

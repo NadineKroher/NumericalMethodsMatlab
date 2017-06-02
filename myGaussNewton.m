@@ -11,7 +11,8 @@ beta = beta0;
 while (err > tol) && (iter < maxIter)
     d = -J(beta)\F(beta);
     beta = beta + d;
-    err = norm(F(beta));
+    err = norm(F(beta)); % var 1
+    % err = norm(d); % var 2
     iter = iter + 1;
 end
 
